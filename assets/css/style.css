@@ -9,10 +9,14 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 body {
-  background: #010825;
+  background:white;
   color:white;
   font-family: "Open Sans", sans-serif;
+}
+html{
+  font-size: 10px;
 }
 
 a {
@@ -397,7 +401,6 @@ h6 {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -499,7 +502,7 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   transition-property: opacity;
-}
+} */
 
 /*--------------------------------------------------------------
 # Sections
@@ -937,88 +940,7 @@ section {
   padding: 0;
 }
 
-/* Testimonials Section
---------------------------------*/
-#testimonials {
-  padding: 30px 0;
-}
 
-#testimonials .testimonials-carousel,
-#testimonials .testimonials-slider {
-  overflow: hidden;
-}
-
-#testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 30px 30px 0 30px;
-  margin: 30px 15px;
-  text-align: center;
-  min-height: 350px;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-}
-
-@media (max-width: 767px) {
-  #testimonials .testimonial-item {
-    margin: 30px 10px;
-  }
-}
-
-#testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  margin: 0 auto;
-}
-
-#testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #111;
-}
-
-#testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0;
-}
-
-#testimonials .testimonial-item .quote-sign-left {
-  margin-top: -15px;
-  padding-right: 10px;
-  display: inline-block;
-  width: 37px;
-}
-
-#testimonials .testimonial-item .quote-sign-right {
-  margin-bottom: -15px;
-  padding-left: 10px;
-  display: inline-block;
-  max-width: 100%;
-  width: 37px;
-}
-
-#testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-}
-
-#testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-#testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #50d8af;
-}
-
-#testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #50d8af;
-}
 
 /* Call To Action Section
 --------------------------------*/
@@ -1067,213 +989,374 @@ section {
 
 /* Our Team Section
 --------------------------------*/
-#team {
-  background: #fff;
-  padding: 30px 0 0 0;
-}
 
-#team .member {
-  text-align: center;
-  margin-bottom: 20px;
-}
 
-#team .member .pic {
-  overflow: hidden;
-  text-align: center;
-}
 
-#team .member .pic img {
-  max-width: 100%;
-}
-
-#team .member .details {
-  background: #50d8af;
-  color: #fff;
-  padding: 15px;
-  border-radius: 0 0 3px 3px;
-}
-
-#team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-}
-
-#team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-
-#team .member .social {
-  margin-top: 5px;
-}
-
-#team .member .social a {
-  color: #fff;
-}
-
-#team .member .social i {
-  font-size: 16px;
-  margin: 0 2px;
-}
-
+        
 /* Contact Section
 --------------------------------*/
-#contact {
-  padding: 30px 0;
+.contact-container{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+.contact-container .hero-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+.hero-container p {
+  color:black;
+}
+.hero-container p {
+  font-size:30px;
+}
+.form-control{
+  font-size:20px;
+  border-color: #00f2fe;
 }
 
-#contact .contact-info {
-  margin-bottom: 20px;
-  text-align: center;
+.btn {
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to top, #00154c, #12376e, #23487f);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
-#contact .contact-info i {
-  font-size: 48px;
-  display: inline-block;
-  margin-bottom: 10px;
-  color: black;
-}
-
-#contact .contact-info address,
-#contact .contact-info p {
-  margin-bottom: 0;
-  color: #000;
-}
-
-#contact .contact-info h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-weight: bold;
+.btn span {
+  font-size: 12px;
   text-transform: uppercase;
-  color: #999;
+  letter-spacing: 1px;
+  transition: top 0.5s;
 }
 
-#contact .contact-info a {
-  color: #000;
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
-#contact .contact-info a:hover {
-  color: #50d8af;
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
-#contact .contact-address,
-#contact .contact-phone,
-#contact .contact-email {
-  margin-bottom: 20px;
+.btn:hover .btn-text-one {
+  top: -100%;
 }
 
-@media (min-width: 768px) {
-
-  #contact .contact-address,
-  #contact .contact-phone,
-  #contact .contact-email {
-    padding: 20px 0;
-  }
+.btn:hover .btn-text-two {
+  top: 50%;
 }
 
-@media (min-width: 768px) {
-  #contact .contact-phone {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-  }
+
+
+.contact-container .hero-container .hero-text .bi{
+  font-size:50px;
+  color: black;
+  padding-right:10px;
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+
+  cursor: pointer;
+}
+.form-container{
+  margin:0 100px;
 }
 
-#contact #google-map {
-  height: 290px;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 576px) {
-  #contact #google-map {
-    margin-top: 20px;
-  }
-}
-
-#contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-#contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-#contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
+.team-container , #contact  h2{
+  padding:20px;
   text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+} 
 
-#contact .php-email-form .loading {
-  display: none;
-  background: #fff;
+
+
+/* .team-container{
+  
+  
+} */
+.wrapper {
+  /* max-width: 1100px; */
+  width: 100%;
+  position: relative;
+  /* margin:100px; */
+  border:50px;
+  padding:50px;
+  /* left:30px; */
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
   text-align: center;
-  padding: 15px;
-}
-
-#contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
+  line-height: 50px;
+  background: #EE8023;
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+#left{
+  left: -19px;
+}
+#right{
+  right: -19px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  /* width:1090px; */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  width:240px;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  background: #8B53FF;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+@media screen and (max-width: 1000px) {
+  .wrapper .carousel{
+    width:1000px;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    width: 100%;
+  }
 }
 
-#contact .php-email-form input,
-#contact .php-email-form textarea {
-  padding: 10px 14px;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 15px;
+/*--------------------------------------------------------------
+#Blogs
+---------------------------------------------------------------*/
+
+.blog h2{
+  color:black;
+  margin:50px;
 }
 
-#contact .php-email-form input::focus,
-#contact .php-email-form textarea::focus {
-  background-color: #50d8af;
+.blog-post-img img{
+  width: 100%;
 }
 
-#contact .php-email-form button[type=submit] {
-  background: #50d8af;
-  border: 0;
-  border-radius: 3px;
-  padding: 10px 30px;
+
+.blog-container{
+  width:100%;
+  height:100vh;
+  display:flex;
+  
+  
+ 
+  flex-wrap:wrap;
+  
+  
+  background-color:#eee;
+  padding:0 1.5rem;
+
+}
+
+.blog-post{
+ 
+  width: 100%;
+  max-width: 60rem;
+ 
+  padding: 5rem;
+  margin:20px;
+  
+  background-color: #fff;
+  box-shadow: 0 1.4rem 8rem rgba(0,0,0,0.2);
+  display:flex;
+  align-items:center;
+  flex-direction: row;
+  border-radius: 0.8rem;
+}
+
+.blog-post-img{
+  min-width: 30rem;
+  max-width:30rem;
+  height: 25rem;
+  transform: translateX(-8rem);
+  position: relative;
+}
+
+.blog-post-img img{
+  width: 100%;
+  height:100%;
+  object-fit:cover;
+  display: block;
+  border-radius: 0.8rem;
+}
+
+.blog-post-img::before{
+  content: "";
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  background: linear-gradient(to right, rgba(79, 172, 254, 0.8)),
+                                          rgba(0, 242, 254, 0.8);
+  box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0,0,0,0.05);
+  border-radius:  0.8rem;
+}
+
+.blog-post-date span{
+  display:block;
+  color: rgba(0,0,0,0.5);
+  font-size:1.6rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.blog-post-tittle{
+  font-size: 2.5rem;
+  margin: 1.5 rem 0 2rem;
+  text-transform: uppercase;
+  color: #4facfe;
+}
+
+.blog-post-text{
+  margin-bottom: 3rem;
+  font-size:1.4rem;
+  color: rgba(0,0,0,0.7);
+
+}
+
+.comic-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
   color: #fff;
-  transition: 0.4s;
+  background-color: #ff5252;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
-#contact .php-email-form button[type=submit]:hover {
-  background: #2dc899;
+.comic-button:hover {
+  background-color: #fff;
+  color: #ff5252;
+  border: 2px solid #ff5252;
+  box-shadow: 5px 5px 0px #ff5252;
 }
 
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
+.comic-button:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+
+
+@media screen and (max-width: 1068px){
+  .blog-post{
+      max-width: 42rem;
   }
 
-  100% {
-    transform: rotate(360deg);
+  .blog-post-img{
+      min-width: 25rem;
+      max-width: 25rem;
+  }
+}
+
+@media screen and (max-width: 868px){
+  .blog-post{
+      max-width: 32rem;
+  }
+
+}
+@media screen and (max-width: 768px){
+  .blog-post{
+      padding:2.5rem;
+      flex-direction: column;
+  }
+
+  .blog-post-img{
+      min-width: 100%;
+      max-width: 100%;
+      transform: translate(0, -5.5rem);
   }
 }
 
@@ -1282,6 +1365,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: #010825;
+  
   padding: 0 0 30px 0;
   font-size: 14px;
 }
